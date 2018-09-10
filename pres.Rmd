@@ -1,0 +1,350 @@
+---
+title: "Workshop: Conheça o R"
+subtitle: "Uma introdução ao universo da ciência de dados."
+author: "Curso-R"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse, middle, center
+
+# Quem somos?
+
+---
+
+.pull-left[
+* 2015 - Cursos no IME-USP no programa de verão.
+* 2018 - Turmas abertas.
+]
+
+.pull-right[
+  <img src="https://d33wubrfki0l68.cloudfront.net/ed115f85cf30f544bcc3358457785c80af2beb06/330fd/img/equipe/fernando.jpeg" style="width=20%;">
+  Fernando Corrêa
+]
+
+---
+class: inverse, middle, center
+
+# O que é ciência de dados?
+
+---
+class: middle, center
+
+> Ciência de dados é o processo pelo qual dados se transformam em intuição, compreensão e conhecimento.
+> 
+> Hadley Wickham
+
+---
+
+<img src="https://user-images.githubusercontent.com/4706822/45316589-db1b4580-b50d-11e8-8e53-33950d5c4c07.jpg" style="position: fixed; width: 40%; top: 250px; left: 300px;">
+
+--
+
+<img src="http://pennachio.wpengine.com/wp-content/uploads/2017/02/diabetic-retinopathy_comparison-1024x469.jpg" style="position: fixed; width: 40%; top: 100px; left: 100px;">
+
+--
+
+<img src="https://user-images.githubusercontent.com/4706822/45318946-d0b07a00-b514-11e8-85a5-0625f794003f.png" style="position: fixed; width: 40%; top: 400px; left: 500px;">
+
+--
+
+<img src="https://www.extremetech.com/wp-content/uploads/2014/09/self-driving-head-640x353.jpg" style="position: fixed;  width: 40%; top: 100px; left: 500px;">
+
+--
+
+<img src="http://multimidia.correiodopovo.com.br/thumb.aspx?Caminho=multimidia/2017/10/07/434592.JPG&Tamanho=690" style="position: fixed; width: 40%; top: 400px; left: 100px;">
+
+--
+
+<img src="https://i2.wp.com/www.yaabot.com/wp-content/uploads/2016/11/yaabot_algo2.jpg?resize=759%2C500&ssl=1" style="position: fixed; width: 40%; top: 200px; left: 500px;">
+
+--
+
+<img src="https://5.imimg.com/data5/NT/NK/MY-38742550/life-insurance-health-insurance-and-general-insurance-250x250.png" style="position: fixed; width: 20%; top: 200px; left: 100px;">
+
+--
+
+<img src="https://i.ytimg.com/vi/DmPLEURo-Vk/maxresdefault.jpg" style="position: fixed; width: 40%; top: 200px; left: 300px;">
+
+
+---
+
+
+## Por que o hype?
+
+* Vivemos em uma era cada vez mais digital.
+* Analisar dados economiza e gera dinheiro.
+* Problemas historicamente muito difíceis foram resolvidos nos últimos anos.
+
+---
+
+.pull-left[
+  ![](http://s2.glbimg.com/r4qJtLeZ1EICmU_t1r9rSwrZkT8=/695x0/s.glbimg.com/po/tt2/f/original/2015/11/06/veja-motivos-e-solucoes-para-erros-de-pontuacao-no-seu-perfil-do-waze.png)
+  
+  ![](https://lh3.googleusercontent.com/rdoJCllal9Lbn6i-u9L2Ajg22r7wuUD0t-MrNQg6VXiu3ul0x_YpODqdDJpAdaNrMdIbu-MOLIP7d_AspPW90QE)
+]
+
+.pull-right[
+  ![](https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/158835/regular_logo99jobs2.png)
+
+  ![](http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png)
+]
+
+
+
+---
+class: center, middle
+
+![](https://user-images.githubusercontent.com/4706822/45316157-aa86dc00-b50c-11e8-9d3a-1069322a0846.png)
+
+---
+
+## Perigo do hype
+
+* É preciso estudar e se aprofundar.
+* O marketing pode ser maior do que o produto.
+
+---
+
+## Data Science é só hype?
+
+--
+
+### Não
+
+--
+
+* Todos os setores estão se digitalizando.
+* Muito do que foi produzido é realmente útil e não vai deixar de ser usado.
+* Ainda tem muito a ser aprimorado.
+
+---
+class: middle, center
+
+![](https://user-images.githubusercontent.com/4706822/45318130-5979e680-b512-11e8-87aa-3f4f1629574d.png)
+
+---
+class: middle, center
+
+![](http://www.informamidia.com.br/wp-content/uploads/2016/07/ibm_watson.png)
+
+---
+
+# Habilidades importantes de um cientista de dados
+
+--
+
+* Curiosidade
+
+--
+
+* Análise crítica
+
+--
+
+* Conhecer o método científico
+
+--
+
+* Modelar
+
+--
+
+* Programar
+
+---
+class: center, middle
+
+## Fazemos análise de dados no computador
+
+<img src="https://camo.githubusercontent.com/11a071fe28afa75eb6eab84352b826addf9b8771/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f372f37662f4b61726c5f50656172736f6e2e6a7067" alt="Karl Pearson - Wikipedia" style="width: 50%;">
+
+---
+class: center
+
+## Fazemos análise de dados no computador
+
+<img src="https://user-images.githubusercontent.com/4706822/44841624-30a44800-ac1a-11e8-9588-8371f7f42862.png" style="width: 70%"> 
+
+---
+class: center
+
+# Temos duas principais interfaces: **point & click**
+
+<img src="https://camo.githubusercontent.com/32a5de8a6a3b424e5b78fdc53a79c439a6d112c8/68747470733a2f2f696d61672e6d616c61766964612e636f6d2f6d76696d676269672f646f776e6c6f61642d66732f69626d2d737073732d737461746973746963732d393238382d352e6a7067" alt="IBM SPSS" style="width: 80%;">
+
+---
+class: center
+
+# Temos duas principais interfaces: **point & click**
+
+<img src="https://camo.githubusercontent.com/b1e52ce0422701c06bd18e100497a939b518f5a7/68747470733a2f2f7777772e616e616c79746963737669646879612e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30372f656e74657270726973652d67756964655f66756c6c2e6a7067" alt="SAS Guide" style="width: 80%;">
+
+---
+class: center
+
+# e **programar**
+
+![](https://user-images.githubusercontent.com/4706822/44840532-9a6f2280-ac17-11e8-862b-ee523b710ecf.png)
+
+---
+class: center
+
+# e **programar**
+
+<img src="https://user-images.githubusercontent.com/4706822/44840657-e4f09f00-ac17-11e8-8137-2933fc67a894.png" style="width: 70%">
+
+
+---
+
+# O que são linguagens de programação?
+
+Uma linguagem de programação é um vocabulário e um conjunto de regras gramaticais que servem para instruir um computador a executar uma tarefa específica.
+
+---
+class: center, middle
+
+### Por que programar é preferível?
+
+<br>
+
+# 1. Código é texto
+# 2. Código é legível
+# 3. Código é aberto
+
+---
+class: middle, center, inverse
+
+# Código é texto
+
+---
+class: middle, center
+
+### Copiar & Colar 
+
+<img src="https://camo.githubusercontent.com/c8400b8b8aa5d9eb50641b3a1c47088cb9103f8b/687474703a2f2f7777772e6a6f736f66746563682e636f6d2f696d616765732f636f70792d70617374652e706e67" style="width: 100%">
+
+---
+class: middle, center
+
+### Stack Overflow
+
+<img src="https://user-images.githubusercontent.com/4706822/44841420-acea5b80-ac19-11e8-8205-f17c01fbb803.png" style="width: 70%">
+
+---
+class: middle, center, inverse
+
+# Código é legível
+
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(magrittr)
+library(magick)
+library(ggplot2)
+library(dplyr)
+library(viridis)
+```
+
+```{r, eval = FALSE}
+image_read("https://jeroen.github.io/images/frink.png") %>%
+  image_rotate(270) %>%
+  image_background("blue", flatten = TRUE) %>%
+  image_border("red", "10x10") %>%
+  image_annotate("Liguagens de programação ainda\nsão linguagens!", 
+                 color = "white", size = 30)
+```
+
+--
+
+.pull-left[
+<img src = "https://jeroen.github.io/images/frink.png">
+]
+
+
+--
+
+.pull-right[
+```{r, eval = TRUE, echo = FALSE}
+image_read("https://jeroen.github.io/images/frink.png") %>%
+  image_rotate(270) %>%
+  image_background("blue", flatten = TRUE) %>%
+  image_border("red", "10x10") %>%
+  image_annotate("Liguagens de programação ainda\nsão linguagens!", 
+                 color = "white", size = 30)
+```
+]
+
+
+---
+
+## Código te dá confiança de que está certo!
+
+<img src="https://user-images.githubusercontent.com/4706822/44843506-dbb70080-ac1e-11e8-892b-744a60bafaeb.png" style="width:80%;">
+
+---
+class: middle, center, inverse
+
+# Código é aberto
+
+---
+class: middle, center
+
+
+# Todas as linguagens de programação modernas são open-source.
+
+---
+
+# Grátis
+
+* Estudantes podem usar as mesmas ferramentas que os profissionais
+* Todos podem usar as melhores ferramentas idenpendente do poder financeiro
+* Qualquer um pode reproduzir as suas análises
+
+---
+
+# Aberto
+
+* Você pode corrigir problemas
+* Você pode desenvolver suas próprias ferramentas
+
+---
+
+# A linguagem R
+
+* R é uma liguagem de programação
+
+--
+
+* R foi criado para fazer análise de dados.
+
+
+--
+
+* R é Open Source
+
+--
+
+* R possui uma comunidade muito ativa de desenvolvedores
+
+---
+class: middle, center
+
+# Por que usar o R?
+
+colocar o ciclo da ciência de dados
+
+---
+
+colocar ciclo da ciência de dados em forma de pacotes do R
+
+---
+class: inverse, middle, center
+
+# Exemplos
+
