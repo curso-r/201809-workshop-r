@@ -1,7 +1,6 @@
 library(tidyverse)
 library(readxl)
 
-arquivos <- list.files(path = "data-raw", full.names = TRUE)
-arquivos <- arquivos[stringr::str_detect(arquivos, "CO")]
+arquivos <- list.files(path = "data-raw", pattern = "CO", full.names = TRUE)
 
 df <- map_dfr(arquivos, read_excel)

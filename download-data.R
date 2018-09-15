@@ -24,8 +24,21 @@ baixar_ultimo_ano <- function(pol) {
   starts <- formatar(starts)
   ends <- formatar(ends)
   
-  dfs <- map2(starts, ends, ~scraper_cetesb("99", cod_poluente, .x, .y, type = "P", "thewilliam89@gmail.com", "wouldy0uqua?",
-                                            invalidData = "on", network = "A"))
+  dfs <- map2(
+    starts, 
+    ends, 
+    ~scraper_cetesb(
+      "99", 
+      cod_poluente, 
+      .x, 
+      .y, 
+      type = "P", 
+      "thewilliam89@gmail.com", 
+      "wouldy0uqua?", 
+      invalidData = "on", 
+      network = "A"
+    )
+  )
   
   starts <- dmy(starts)
   for(i in 1:12){
@@ -39,11 +52,21 @@ baixar_ultimo_ano("NO")
 baixar_ultimo_ano("CO")
 
 
+df_ <- scraper_cetesb(
+  99, 
+  16, 
+  "01/01/2018", 
+  "31/01/2018", 
+  type = "P", 
+  "thewilliam89@gmail.com", 
+  "wouldy0uqua?", 
+  invalidData = "on", 
+  network = "A"
+)
+View(df_)
 
 
-
-
-
+writexl::write_xlsx(df_, "data-raw/CO-Pinheiros-201801.xlsx")
 
 
 

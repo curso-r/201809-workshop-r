@@ -372,14 +372,20 @@ class: inverse, middle, center
 
 ---
 
-colocar clico da ciência de dados
+## Ciclo da ciência de dados
+
+<img src="img/ciclo-ciencia-de-dados.png" style = "display: block; margin-left: auto; margin-right: auto;">
 
 ---
 
-colocar ciclo da ciência de dados em forma de pacotes do R
+## Ciclo da ciência de dados
+
+<img src="img/ciclo-ciencia-de-dados-pacotes.png" style = "display: block; margin-left: auto; margin-right: auto;">
 
 ---
 class: inverse, middle, center
 
 # Exemplos
+
+## Vamos ao R!
 
