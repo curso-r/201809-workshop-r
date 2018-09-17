@@ -33,8 +33,8 @@ baixar_ultimo_ano <- function(pol) {
       .x, 
       .y, 
       type = "P", 
-      "thewilliam89@gmail.com", 
-      "wouldy0uqua?", 
+      "seu_login", 
+      "sua_senha", 
       invalidData = "on", 
       network = "A"
     )
@@ -58,8 +58,8 @@ df_ <- scraper_cetesb(
   "01/01/2018", 
   "31/01/2018", 
   type = "P", 
-  "thewilliam89@gmail.com", 
-  "wouldy0uqua?", 
+  "seu_login", 
+  "sua_senha", 
   invalidData = "on", 
   network = "A"
 )
